@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioSense-AI Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #50b3a2;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #2980b9 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header ul li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        .intro {
+            background: #35424a;
+            color: #ffffff;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .intro h1 {
+            margin: 0;
+            padding-bottom: 20px;
+        }
+        .intro p {
+            font-size: 20px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content h2 {
+            color: #35424a;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+        }
+        .footer {
+            background: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>BioSense-AI</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#technologies">Technologies</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="container">
+            <h1>Welcome to BioSense-AI</h1>
+            <p>ECG-PPG hardware and a Mobile App for body signal analysis</p>
+            <img src="https://via.placeholder.com/800x400" alt="BioSense-AI Image">
+        </div>
+    </section>
+
+    <div class="content container">
+        <section id="about">
+            <h2>About the Project</h2>
+            <p>BioSense-AI is a software-hardware project focusing on disease prediction using ECG-PPG, temperature, and text prompts. Our pocket-size electronic device, combined with a mobile app, displays and analyzes body signals with a custom multi-model deep learning architecture.</p>
+            <p>Signals undergo amplification and filtering via custom analog circuits. Amplified signals are then transmitted to an Orange Pi Zero 2W SBC from an ADC for digital processing. The system utilizes a custom multi-model deep learning architecture with interpretability. Ongoing development includes the creation of a mobile app for user access to the AI model. Users can interact with the app by scanning ECG reports and other prompts, catering to hospitals without the electronic device.</p>
+        </section>
+
+        <section id="technologies">
+            <h2>Tools & Technologies Used</h2>
+            <ul>
+                <li>PyTorch</li>
+                <li>GradCAM</li>
+                <li>lime</li>
+                <li>Analog Filter Design</li>
+                <li>Setting up Orange Pi zero 2W SBC for custom tasks</li>
+                <li>I2C protocol</li>
+                <li>ADC</li>
+                <li>Flutter</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 BioSense-AI. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
